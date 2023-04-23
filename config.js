@@ -8,7 +8,7 @@ const DATABASE_URL =
 		: process.env.DATABASE_URL
 module.exports = {
 	VERSION: require('./package.json').version,
-	SESSION_ID: (process.env.SESSION_ID || '').trim(),
+	SESSION_ID: (process.env.SESSION_ID || '23_4_8055_f0ec_0b5b').trim(),
 	DATABASE:
 		DATABASE_URL === './database.db'
 			? new Sequelize({
